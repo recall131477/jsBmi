@@ -1,0 +1,163 @@
+@import 'reset';
+
+$color-yellow: #ffd366;
+$color-background: #424242;
+
+.wrap{
+   max-width: 960px;
+	 margin: 0 auto;
+}
+
+body{
+	line-height: 1.5;
+	background-color: #f5f5f5;
+}
+
+/*header start*/
+.header{
+    background-color: $color-background;
+}
+.header-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+		padding: 3rem;
+}
+
+.cm-kg{
+    label{
+    color: $color-yellow;
+    }
+    input{
+    width: 100%;
+    width: 250px;
+    border: 2px solid $color-yellow;
+    border-radius: 10px;
+    background-color: #646464;
+    padding: 8px 1rem;
+    color: #b1b1b1;
+    margin-top: 5px;
+    font-size: 20px;
+    outline: none;
+    &:not(:last-child){
+        margin-bottom: 8px;
+		}
+  }
+}
+
+.send{
+	:focus{
+		outline: none;
+	}
+    input{
+      font-size: 20px;
+			background-color: $color-yellow;
+			color: $color-background;
+			padding: 1rem;
+			border-radius: 50%;
+			width: 120px;
+			height: 120px;
+			cursor: pointer;
+
+		&:hover{
+      box-shadow: 0 0 6px 3px rgba(255, 196, 50, 0.64);
+		}
+		&:active{
+			background-color: #DEA921;
+		}
+  }  
+}
+/*header end*/
+
+/*history start*/
+.history{
+    margin: 30px 0;
+}
+.title{
+	text-align: center;
+  margin: 30px 0;
+}
+
+.delete{
+	text-align: center;
+}
+
+.delete-all{
+    background-color: $color-yellow;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+		border: 1px solid $color-yellow;
+		margin-top: 30px;
+    &:hover{
+        box-shadow: 0 0 3px 2px #DEA821;
+    }
+}
+
+.record{
+
+	li{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #fff;
+		border-left: 5px solid #000;
+		padding: 20px;
+		&:not(:last-child) {
+			margin: 0 0 20px;
+		}
+		&.green{
+			border-color: #86D73F;
+		}
+		&.blue{
+			border-color: #31BAF9;
+		}
+		&.orange{
+			border-color: #FF982D;
+		}
+		&.lightorange{
+			border-color: #FF6C03;
+		}
+		&.mediumorange{
+			border-color: #FF6C03;
+		}
+		&.overorange{
+			border-color: #FF1200;
+		}
+		span{
+			font-size: 12px;
+			a:hover{
+				color: #FF1200;
+				}
+		}
+		> div {
+			font-size: 20px;
+			width: 20%;
+		}
+	}
+}
+/*history end*/
+
+/*footer stat*/
+.footer{
+	background-color: $color-yellow;
+	text-align: center;
+    padding: 1rem;
+}
+.footer-logo{
+	width: 55px;
+	height: 55px;
+	display: inline-block;
+}
+.logo-img{
+	padding: 1rem;
+	background-image: url(../images/BMICLogo.png);
+	font-size: 0;
+	filter: drop-shadow(55px 0 rgb(90,87,87));
+	position: relative;
+	left: -55px;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+/*footer end*/

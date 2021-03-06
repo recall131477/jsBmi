@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BMI計算器</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+	<div class="wrap">
+		<!-- header -->
+		<div class="header">
+			<div class="header-items">
+				<div class="img">
+					<img src="images/BMICLogo.png">
+				</div>
+				<div class="cm-kg">
+					<label for="cm">身高 cm</label><br>
+					<input type="number" class="height" id="cm" placeholder="請輸入身高" required>
+					<br>
+					<label for="kg">體重 kg</label><br>
+					<input type="number" class="weight" id="kg" placeholder="請輸入體重" required>
+				</div>
+				<div class="send">
+					<input type="submit" class="result" value="看結果">
+				</div>
+			</div>
+		</div>
+
+		<!-- history -->
+		<div class="history">
+			<h2 class="title">BMI記錄</h2>
+			<ul class="record"></ul>
+			<div class="delete">
+				<input type="submit" class="delete-all" value="刪除全部紀錄">
+			</div>
+		</div>
+
+		<!-- footer -->
+		<div class="footer">
+			<div class="footer-logo">
+				<div class="logo-img">
+					LOGO圖片
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/all.js"></script>
+</body>
+
+</html>
